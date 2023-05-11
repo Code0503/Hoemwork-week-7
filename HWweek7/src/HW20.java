@@ -1,23 +1,23 @@
+import java.util.Arrays;
+
 public class HW20 {
     //Write a Java program to sort a numeric array and a string array.
-static String name[]={"JAVA","POSTMAN","SELENIUM","PAYTHON","C++"};
     public static void main(String[] args) {
 
 
-        int a[] = new int[5];
-        a[0]=0;
-        a[1] = 1;
-        a[2]=2;
-        a[3]=3;
-        a[4]=4;
+    int[] a ={56,88,99,90,67};
 
+    String[] b ={"python","postman","selenium","java"};
 
-        for(int i=0; i<name.length; i++){
-            System.out.println(name[i]);
-            System.out.println(a[i]);
+    //System.out.println("original numeric array:" +Arrays.toString(a));
+        Arrays.sort(a);
 
-    }
+        System.out.println("Sorted numeric array :"  + Arrays.toString(a));
 
-        System.out.println(name[0]);
-        System.out.println(name[4]);
+    //System.out.println("original String array:" +Arrays.toString(b));
+        Arrays.sort(b);
+
+        System.out.println("Sorted numeric array :"  + Arrays.toString(b));
+
 }}
+

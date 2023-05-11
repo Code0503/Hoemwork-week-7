@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class HW15 {
     //Write a program that tells us input value is number or an alphabet orsymbol.
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         char ch;     //Declare a char in variable
         System.out.println("Enter the character ");
@@ -21,7 +22,15 @@ public class HW15 {
         } else {
             System.out.print(i + " is not Number ");
         }
-    }}
+        //else if(sc >= 'a' && sc <= 'z'){
+          //  System.out.println("The input you have entered is Character");}
+      //  else if (sm >= '0' && sm <= '9') {
+         //   System.out.println("The input you have entered is number");
+       // } else{
+         //   System.out.println("The input you have entered is Symbol");
+
+        }//
+    }
 
 
 

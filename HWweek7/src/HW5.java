@@ -17,7 +17,7 @@ public class HW5 {
     }
 
 public static void marksheet() {
-    String subject1 = "| Maths :           |", subject2 = "| Sceince :        |", subject3 = "| English :        |", subject = "| Subject :        ", name = "| Name :                  |", roll = "| Roll No :              |", total = "| Total Marks :            |";
+    String subject1 = "| Maths :           ", subject2 = "| Sceince :        ", subject3 = "| English :        ", subject = "| Subject :        ", name = "| Name :                  ", roll = "| Roll No :              ", total = "| Total Marks :            ";
     String percentage = "| Percentage :               |";
     String result = "| Result :";
     String Grade = "| Grade :";
@@ -25,7 +25,7 @@ public static void marksheet() {
 
 
     Scanner student = new Scanner(System.in);
-    System.out.println(name);
+    System.out.print(name);
     while (student.hasNextInt()) {
         System.out.println("Invalid Entry");
         System.out.println("Enter the name again :");
@@ -33,11 +33,11 @@ public static void marksheet() {
     }
     System.out.println("|-------------------------|");
     String R = student.next();
-    System.out.println(roll);
+    System.out.print(roll);
     student.next();
-    System.out.println(subject);
+    System.out.print(subject);
     student.next();
-    System.out.println(subject2);
+    System.out.print(subject2);
     int marks = student.nextInt();
 
     if (marks <= 100) {
@@ -46,7 +46,7 @@ public static void marksheet() {
         System.out.println("invalid entry");
         student.next();
     }
-    System.out.println(subject1);
+    System.out.print(subject1);
     int Mat = student.nextInt();
     if (Mat <= 100) {
         System.out.println("Valid");
@@ -54,7 +54,7 @@ public static void marksheet() {
         System.out.println("invalid entry");
         student.next();
     }
-    System.out.println(subject3);
+    System.out.print(subject3);
     int Eng = student.nextInt();
     if (Eng <= 100) {
         System.out.println("Valid");
@@ -67,7 +67,7 @@ public static void marksheet() {
     int TM = marks + Mat + Eng;
     System.out.println(TM);
     System.out.println("|-------------------------|");
-    System.out.println(percentage);
+    System.out.print(percentage);
     double i = TM * 100 / ot;
 
     System.out.println(i);
